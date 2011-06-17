@@ -1,3 +1,4 @@
+ENV['IRB_MEMO_DIR'] = "/var/tmp/.irb_memos"
 require File.join(File.dirname(__FILE__), '..', 'lib/take_a_memo')
 include TakeAMemo
 

@@ -2,6 +2,8 @@ GEM
   remote: http://rubygems.org/
   specs:
     diff-lcs (1.1.2)
+    file-tail (1.0.5)
+      spruz (>= 0.1.0)
     git (1.2.5)
     jeweler (1.6.0)
       bundler (~> 1.0.0)
@@ -17,12 +19,27 @@ GEM
     rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.6.0)
+    ruby2ruby (1.2.5)
+      ruby_parser (~> 2.0)
+      sexp_processor (~> 3.0)
+    ruby_parser (2.0.6)
+      sexp_processor (~> 3.0)
+    sexp_processor (3.0.5)
+    sourcify (0.5.0)
+      file-tail (>= 1.0.5)
+      ruby2ruby (>= 1.2.5)
+      ruby_parser (>= 2.0.5)
+      sexp_processor (>= 3.0.5)
+    spruz (0.2.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bundler (~> 1.0.0)
+  file-tail
   jeweler (~> 1.6.0)
   rcov
   rspec
+  ruby_parser
+  sourcify

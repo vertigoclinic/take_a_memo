@@ -9,6 +9,9 @@ group :development do
   gem "bundler", "~> 1.0.0"
   gem "jeweler", "~> 1.6.0"
   gem "rcov", ">= 0"
+  gem 'ruby_parser'
+  gem 'file-tail'
+  gem 'sourcify'
 end
 
 group :test do
