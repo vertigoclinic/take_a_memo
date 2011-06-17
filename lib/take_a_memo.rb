@@ -14,19 +14,7 @@ module TakeAMemo
     file.close
     execute_commands(file)  
   end
-  
-  def create_file(title) 
-    FileUtils.mkdir_p(IRB_MEMO_DIR) unless File.exists?(IRB_MEMO_DIR)
-    File.new("#{IRB_MEMO_DIR}/#{title.gsub(" ", "_")}.rb", "w")
-  end
-  
-  def execute_commands(file)
-    cmd = IO.read(file.path)
-    output = eval cmd
-    puts "memo returned: #{output.call}"
-  end
-  
-  
+ 
   def play_it_back(memo)
     unless file = File.open("#{IRB_MEMO_DIR}/#{memo.gsub(" ", "_")}.rb")
         puts "couldn't find file for #{memo}"
@@ -50,6 +38,20 @@ module TakeAMemo
         puts "couldn't find file to remove for #{memo}"
     end
     FileUtils.rm("#{IRB_MEMO_DIR}/#{memo.gsub(" ", "_")}.rb")
+  end
+  
+  private 
+  
+  
+  def create_file(title) 
+    FileUtils.mkdir_p(IRB_MEMO_DIR) unless File.exists?(IRB_MEMO_DIR)
+    File.new("#{IRB_MEMO_DIR}/#{title.gsub(" ", "_")}.rb", "w")
+  end
+  
+  def execute_commands(file)
+    cmd = IO.read(file.path)
+    output = eval cmd
+    puts "memo returned: #{output.call}"
   end
 
 end
