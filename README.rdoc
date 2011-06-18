@@ -35,9 +35,6 @@ You can set this up in your .irbrc file like this:
 	
 The storage location for the memos defaults to ~/.irb_memos, but you can change it by setting ENV['IRB_MEMO_DIR']
 
-== TODO
-* add a method to just show what's in the memo, instead of executing it. 
-
 == Contributing to take_a_memo
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
