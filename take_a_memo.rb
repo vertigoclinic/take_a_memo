@@ -1,0 +1,1 @@
+require File.join(File.dirname(__FILE__), 'lib/take_a_memo')
