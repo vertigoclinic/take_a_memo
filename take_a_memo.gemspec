@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "lib/take_a_memo.rb",
     "spec/spec_helper.rb",
     "spec/take_a_memo_spec.rb",
+    "take_a_memo.gemspec",
     "take_a_memo.rb"
   ]
   s.homepage = %q{http://github.com/vertigoclinic/take_a_memo}
