@@ -1,4 +1,5 @@
 require 'sourcify'
+require 'fileutils'
 
 module TakeAMemo
     
