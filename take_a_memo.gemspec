@@ -5,23 +5,23 @@
 
 Gem::Specification.new do |s|
   s.name = %q{take_a_memo}
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["vertigoclinic"]
-  s.date = %q{2011-07-10}
+  s.date = %q{2011-07-28}
   s.description = %q{A simple gem to record commands from your irb session}
   s.email = %q{vertigoclinic@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.txt"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.txt",
     "Rakefile",
     "VERSION",
     "lib/take_a_memo.rb",
