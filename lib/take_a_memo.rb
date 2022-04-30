@@ -30,7 +30,7 @@ module TakeAMemo
         puts "you have no saved memos"
         return
     end
-    puts %Q|Here's your memos:\n|
+    puts %Q|Here\'s your memos:\n|
     puts Dir.entries(IRB_MEMO_DIR).reject {|m| m =~ /^\./ }.map {|m| "\t - #{m.gsub(".rb", "").gsub("_", " ")}" }.join("\n") 
   end
   
